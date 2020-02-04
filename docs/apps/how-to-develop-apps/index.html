@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+
+  
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Arimoblog">
+  <style>
+    html {
+      font-family: Arimoblog, sans-serif;
+    }
+  </style>
+
+
+
+  
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Didact&#43;Gothic">
+  <style>
+    h1, h2, h3, h4, h5, h6 {
+      font-family: Didact Gothic, sans-serif;
+    }
+  </style>
+
+
+
+<link rel="stylesheet" href='/css/titi.css'>
+
+
+
+
+<title>
+  
+    How to develop Datasketch Apps | Datasketch developers
+  
+</title>
+
+
+
+<meta name="description" content="">
+
+
+<meta itemprop="name" content="How to develop Datasketch Apps">
+<meta itemprop="description" content="">
+
+
+
+<meta property="og:title" content="How to develop Datasketch Apps" />
+<meta property="og:description" content="Generic Apps Objective Develop many apps at once that share the same funcionalities.
+Features All apps should have the following funcionalities
+ Same layout {shinypanles}  Data Panels Data upload Data preview or tweaking Visualization Panels Inputs, controls and options for users Result previews  Data upload from Datasketch Open Data {dsAppsIO, dsconnect} Export modal {using dsAppsIO, dsconnect} Multi-language support using {shi18ny} Custom inputs (search, color palettes, etc) {shinyinvoer} Use data types for humans when possible {homodatum} Use data validations for table inputs {hotr} with dictionaries {datafringe} Use parametrized contents when possible {parmesan}  Deployment TODO: How to deploy apps with github actions automatically" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="/apps/how-to-develop-apps/" />
+
+
+
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="How to develop Datasketch Apps"/>
+<meta name="twitter:description" content="Generic Apps Objective Develop many apps at once that share the same funcionalities.
+Features All apps should have the following funcionalities
+ Same layout {shinypanles}  Data Panels Data upload Data preview or tweaking Visualization Panels Inputs, controls and options for users Result previews  Data upload from Datasketch Open Data {dsAppsIO, dsconnect} Export modal {using dsAppsIO, dsconnect} Multi-language support using {shi18ny} Custom inputs (search, color palettes, etc) {shinyinvoer} Use data types for humans when possible {homodatum} Use data validations for table inputs {hotr} with dictionaries {datafringe} Use parametrized contents when possible {parmesan}  Deployment TODO: How to deploy apps with github actions automatically"/>
+
+
+</head>
+<body>
+	<div id="wrapper" class="column">
+		
+
+
+<div
+  class="burger-menu column v-centered"
+  style="background: #dddddd; color: black"
+>
+  <div class="container">
+    <ul class="burger-menu--items">
+      
+      
+        
+          <li class="burger-menu--item burger-menu--nav-item"><a href="/">Home</a></li>
+        
+          <li class="burger-menu--item burger-menu--nav-item"><a href="/what/">What are we building</a></li>
+        
+          <li class="burger-menu--item burger-menu--nav-item"><a href="/blog/">Blog</a></li>
+        
+          <li class="burger-menu--item burger-menu--nav-item"><a href="/contribuitor-guidelines/">Contribuitor Guidelines</a></li>
+        
+          <li class="burger-menu--item burger-menu--nav-item"><a href="/apps/how-to-develop-apps/">How to develop Datasketch Apps</a></li>
+        
+      
+    </ul>
+  </div>
+</div>
+
+		
+
+
+
+
+
+<header
+  style="background: #dddddd; color: black"
+  class="no-fixed"
+>
+  <nav class="container line v-centered justify-between">
+    <div class="nav__left line v-centered">
+      
+      
+        <div class="burger only-mobile">
+          <div class="burger-bar burger-bar--top" style="background: black"></div>
+          <div class="burger-bar burger-bar--mid" style="background: black"></div>
+          <div class="burger-bar burger-bar--bottom" style="background: black"></div>
+        </div>
+      
+      <a href="/" class="line v-centered nav__logo">
+        
+          <img src="/images/datasketch-logo.svg" alt="Logo Datasketch developers" width="80px">
+        
+      </a>
+    </div>
+    <div class="nav__right line v-centered">
+      
+        
+          <a href="/">Home</a>
+        
+          <a href="/what/">What are we building</a>
+        
+          <a href="/blog/">Blog</a>
+        
+          <a href="/contribuitor-guidelines/">Contribuitor Guidelines</a>
+        
+          <a href="/apps/how-to-develop-apps/">How to develop Datasketch Apps</a>
+        
+      
+      
+        <ul class="nav__social-icons line v-centered">
+          
+            
+            <li>
+              <a
+                href="https://twitter.com/datasketch"
+                target="_blank"
+              >
+                <i class="fa fa-twitter"></i>
+              </a>
+            </li>
+          
+            
+            <li>
+              <a
+                href="https://www.facebook.com/datasketch/?fref=ts"
+                target="_blank"
+              >
+                <i class="fa fa-facebook"></i>
+              </a>
+            </li>
+          
+        </ul>
+      
+    </div>
+  </nav>
+</header>
+
+		<main id="content" class="column item-fill">
+			
+  
+  <div class="post">
+      
+      
+        <h1 class="post__title" style="margin-top: 20px">How to develop Datasketch Apps</h1>
+      
+      
+
+<h2 id="generic-apps">Generic Apps</h2>
+
+<h3 id="objective">Objective</h3>
+
+<p>Develop many apps at once that share the same funcionalities.</p>
+
+<h3 id="features">Features</h3>
+
+<p>All apps should have the following funcionalities</p>
+
+<ul>
+<li>Same layout {shinypanles}
+
+<ul>
+<li>Data Panels</li>
+<li>Data upload</li>
+<li>Data preview or tweaking</li>
+<li>Visualization Panels</li>
+<li>Inputs, controls and options for users</li>
+<li>Result previews</li>
+</ul></li>
+<li>Data upload from Datasketch Open Data {dsAppsIO, dsconnect}</li>
+<li>Export modal {using dsAppsIO, dsconnect}</li>
+<li>Multi-language support using {shi18ny}</li>
+<li>Custom inputs (search, color palettes, etc) {shinyinvoer}</li>
+<li>Use data types for humans when possible {homodatum}</li>
+<li>Use data validations for table inputs {hotr} with dictionaries {datafringe}</li>
+<li>Use parametrized contents when possible {parmesan}</li>
+</ul>
+
+<h3 id="deployment">Deployment</h3>
+
+<p>TODO:  How to deploy apps with github actions automatically</p>
+
+<h2 id="develop-specific-apps">Develop specific apps</h2>
+
+<p>All open source apps live in <a href="http://github.com/datasketch" target="_blank">http://github.com/datasketch</a> and the repositories must comply with the following naming convention <code>http://github.com/datasketch/app_key</code> where <code>key</code> is the unique identifier for each app.</p>
+
+<p>The code of the apps must have the following structure:</p>
+
+<ul>
+<li><code>app.R</code> Code for the app</li>
+<li><code>www</code> custom assets for the app. When it is the same in many app, consider incorporating directly in {shinypanels}</li>
+<li><code>app.Rproj</code> Rstudio project</li>
+<li><code>.gitignore</code> Ignored files</li>
+</ul>
+
+<p>The repository <code>http://github.com/datasketch/app_structure</code> contains a sample app you can clone to start off.</p>
+
+<h3 id="submitting-an-app-for-review-or-publication">Submitting an App for review or publication</h3>
+
+<p>When you come up with your own Datasketch App that you want to publish, make sure it aligns with everything outlined in [How to contribute] TODO</p>
+
+<h3 id="sugested-gitignore">Sugested .gitignore</h3>
+
+<pre><code>.Rproj.user
+.Rhistory
+.RData
+.Ruserdata
+rsconnect
+</code></pre>
+
+  </div>
+
+		</main>
+		
+
+<footer style="background: white; color: black">
+  <div class="footer__inner text-center">
+    Datasketch - Developers
+    <div style="display: flex; align-items: center; flex-wrap: wrap; justify-content: center">
+      <div style="max-width: 224px;">
+        <img src='/images/datasketch.svg' alt="">
+      </div>
+    </div>
+  </div>
+</footer>
+
+	</div>
+	
+	
+	
+	<script src='/js/titi.js'></script>
+	
+	
+</body>
+</html>

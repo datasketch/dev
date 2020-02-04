@@ -30,6 +30,17 @@ Static site themes For journalists</description>
     </item>
     
     <item>
+      <title>How to develop Datasketch Apps</title>
+      <link>/apps/how-to-develop-apps/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/apps/how-to-develop-apps/</guid>
+      <description>Generic Apps Objective Develop many apps at once that share the same funcionalities.
+Features All apps should have the following funcionalities
+ Same layout {shinypanles}  Data Panels Data upload Data preview or tweaking Visualization Panels Inputs, controls and options for users Result previews  Data upload from Datasketch Open Data {dsAppsIO, dsconnect} Export modal {using dsAppsIO, dsconnect} Multi-language support using {shi18ny} Custom inputs (search, color palettes, etc) {shinyinvoer} Use data types for humans when possible {homodatum} Use data validations for table inputs {hotr} with dictionaries {datafringe} Use parametrized contents when possible {parmesan}  Deployment TODO: How to deploy apps with github actions automatically</description>
+    </item>
+    
+    <item>
       <title>Publishing our first package on CRAN</title>
       <link>/blog/avances-hacia-el-iv-plan-de-accion/</link>
       <pubDate>Wed, 04 Mar 2020 17:00:58 -0500</pubDate>
@@ -67,7 +78,8 @@ Static site themes For journalists</description>
 {shi18ny} Shiny internationalization for shiny apps in multiple languages
 {hotr} Handsontable based data input, featuring data validation
 {shinyinvoer} More shiny inputs for colors, button images and search.
-{app_*} Each of our apps has its own repo</description>
+{app_*} Each of our apps has its own repo
+{homodatum} Datatypes for humans</description>
     </item>
     
   </channel>

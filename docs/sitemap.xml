@@ -17,6 +17,10 @@
   </url>
   
   <url>
+    <loc>/apps/how-to-develop-apps/</loc>
+  </url>
+  
+  <url>
     <loc>/blog/avances-hacia-el-iv-plan-de-accion/</loc>
     <lastmod>2020-03-04T17:00:58-05:00</lastmod>
   </url>
@@ -29,6 +33,11 @@
   <url>
     <loc>/faq/</loc>
     <lastmod>2018-12-08T20:07:33-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/apps/</loc>
+    <priority>0</priority>
   </url>
   
   <url>

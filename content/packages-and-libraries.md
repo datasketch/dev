@@ -26,3 +26,9 @@ More shiny inputs for colors, button images and search.
 
 Each of our apps has its own repo
 
+## {homodatum}
+
+Datatypes for humans
+
+
+

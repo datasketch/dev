@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Apps on Datasketch developers</title>
+    <link>/apps/</link>
+    <description>Recent content in Apps on Datasketch developers</description>
+    <generator>Hugo -- gohugo.io</generator>
+    
+	<atom:link href="/apps/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>How to develop Datasketch Apps</title>
+      <link>/apps/how-to-develop-apps/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/apps/how-to-develop-apps/</guid>
+      <description>Generic Apps Objective Develop many apps at once that share the same funcionalities.
+Features All apps should have the following funcionalities
+ Same layout {shinypanles}  Data Panels Data upload Data preview or tweaking Visualization Panels Inputs, controls and options for users Result previews  Data upload from Datasketch Open Data {dsAppsIO, dsconnect} Export modal {using dsAppsIO, dsconnect} Multi-language support using {shi18ny} Custom inputs (search, color palettes, etc) {shinyinvoer} Use data types for humans when possible {homodatum} Use data validations for table inputs {hotr} with dictionaries {datafringe} Use parametrized contents when possible {parmesan}  Deployment TODO: How to deploy apps with github actions automatically</description>
+    </item>
+    
+  </channel>
+</rss>
