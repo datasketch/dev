@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+  xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  
+  <url>
+    <loc>/what/</loc>
+    <lastmod>2019-12-09T14:00:20-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/blog/</loc>
+    <lastmod>2020-03-04T17:00:58-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/contribuitor-guidelines/</loc>
+  </url>
+  
+  <url>
+    <loc>/blog/avances-hacia-el-iv-plan-de-accion/</loc>
+    <lastmod>2020-03-04T17:00:58-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/blog/que-aprendimos-ii-plan-de-acci%C3%B3n-y-que-esperamos-del-tercero/</loc>
+    <lastmod>2020-02-04T19:27:53-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/faq/</loc>
+    <lastmod>2018-12-08T20:07:33-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/categories/</loc>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/</loc>
+    <lastmod>2019-12-09T14:00:20-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/packages-and-libraries/</loc>
+  </url>
+  
+  <url>
+    <loc>/tags/</loc>
+    <priority>0</priority>
+  </url>
+  
+</urlset>

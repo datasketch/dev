@@ -1,0 +1,52 @@
+baseUrl = "/"
+title = "Datasketch developers"
+theme = "hugo-titi"
+disqusShortname = "datasketch"
+ignoreFiles = ["\\.Rmd$", "\\.Rmarkdown$", "_files$", "_cache$"]
+publishDir="docs"
+
+[blackfriday]
+  hrefTargetBlank = true
+
+
+#Parametros de configuración
+[params]
+  [params.fonts]
+    body = "Arimoblog"
+    headings = "Didact Gothic"
+  [params.footer]
+    text = "Datasketch - Developers"
+    bg = "white"
+    color = "black"
+  [params.nav]
+    bg = "#dddddd"
+    color = "black"
+    logo = "images/datasketch-logo.svg"
+    logowidth = "80px"
+    fixed = false
+  [[params.social]]
+    icon = "twitter"
+    url = "https://twitter.com/datasketch"
+  [[params.social]]
+    icon = "facebook"
+    url = "https://www.facebook.com/datasketch/?fref=ts"
+    
+#Barra de navegación
+[menu]
+  [[menu.nav]]
+    name = "Home"
+    url = "/"
+    weight = 1
+  # [[menu.burger]]
+  #   name = "Inicio"
+  #   url = "/"
+  #   weight = 1
+  # [[menu.burger]]
+  #   name = "Acerca de"
+  #   url = "/que-es"
+  # [[menu.burger]]
+  #   name = "Planes de Acción"
+  #   url = "/planes-de-accion"
+  # [[menu.burger]]
+  #   name = "Blog"
+  #   url = "/blog"
