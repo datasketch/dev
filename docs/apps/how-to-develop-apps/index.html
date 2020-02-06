@@ -53,7 +53,7 @@
 <meta property="og:title" content="How to develop Datasketch Apps" />
 <meta property="og:description" content="Generic Apps Objective Develop many apps at once that share the same funcionalities.
 Features All apps should have the following funcionalities
- Same layout {shinypanles}  Data Panels Data upload Data preview or tweaking Visualization Panels Inputs, controls and options for users Result previews  Data upload from Datasketch Open Data {dsAppsIO, dsconnect} Export modal {using dsAppsIO, dsconnect} Multi-language support using {shi18ny} Custom inputs (search, color palettes, etc) {shinyinvoer} Use data types for humans when possible {homodatum} Use data validations for table inputs {hotr} with dictionaries {datafringe} Use parametrized contents when possible {parmesan}  Deployment TODO: How to deploy apps with github actions automatically" />
+ Same layout {shinypanles}  Data Panels Data upload Data preview or tweaking Visualization Panels Inputs, controls and options for users Result previews  Data upload from multiples sources:  Googlesheets, local files, url {dsmodules} Datasketch Open Data {dsconnect}  Export data and results  Download in multiple formats {dsmodules} Publish to Datasketch Library {dsconnect}  Multi-language support {shi18ny} Custom inputs (search, color palettes, etc) {shinyinvoer} Use tidy data types for humans when possible {homodatum} {datafringe} Use data validations for table inputs {hotr} with dictionaries {datafringe} Use parametrized apps from config files {parmesan}  Package structure Generic app components  Layout {shinypanels} Interact with Datasketch library {dsconnect} Interactive table input {hotr}  Data packages  Data types for humans {homodatum} Tidy Data for Humans {datafringe}  Visualization packages  Ggplot wrapper {ggmagic} Highcharts wrapper {ggmagic} Leaflet wrapper {ggmagic} Geo data {geodata}  Develop specific apps App pipeline See galley of live apps here https://airtable." />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="/apps/how-to-develop-apps/" />
 
@@ -63,7 +63,7 @@ Features All apps should have the following funcionalities
 <meta name="twitter:title" content="How to develop Datasketch Apps"/>
 <meta name="twitter:description" content="Generic Apps Objective Develop many apps at once that share the same funcionalities.
 Features All apps should have the following funcionalities
- Same layout {shinypanles}  Data Panels Data upload Data preview or tweaking Visualization Panels Inputs, controls and options for users Result previews  Data upload from Datasketch Open Data {dsAppsIO, dsconnect} Export modal {using dsAppsIO, dsconnect} Multi-language support using {shi18ny} Custom inputs (search, color palettes, etc) {shinyinvoer} Use data types for humans when possible {homodatum} Use data validations for table inputs {hotr} with dictionaries {datafringe} Use parametrized contents when possible {parmesan}  Deployment TODO: How to deploy apps with github actions automatically"/>
+ Same layout {shinypanles}  Data Panels Data upload Data preview or tweaking Visualization Panels Inputs, controls and options for users Result previews  Data upload from multiples sources:  Googlesheets, local files, url {dsmodules} Datasketch Open Data {dsconnect}  Export data and results  Download in multiple formats {dsmodules} Publish to Datasketch Library {dsconnect}  Multi-language support {shi18ny} Custom inputs (search, color palettes, etc) {shinyinvoer} Use tidy data types for humans when possible {homodatum} {datafringe} Use data validations for table inputs {hotr} with dictionaries {datafringe} Use parametrized apps from config files {parmesan}  Package structure Generic app components  Layout {shinypanels} Interact with Datasketch library {dsconnect} Interactive table input {hotr}  Data packages  Data types for humans {homodatum} Tidy Data for Humans {datafringe}  Visualization packages  Ggplot wrapper {ggmagic} Highcharts wrapper {ggmagic} Leaflet wrapper {ggmagic} Geo data {geodata}  Develop specific apps App pipeline See galley of live apps here https://airtable."/>
 
 
 </head>
@@ -196,20 +196,66 @@ Features All apps should have the following funcionalities
 <li>Inputs, controls and options for users</li>
 <li>Result previews</li>
 </ul></li>
-<li>Data upload from Datasketch Open Data {dsAppsIO, dsconnect}</li>
-<li>Export modal {using dsAppsIO, dsconnect}</li>
-<li>Multi-language support using {shi18ny}</li>
+<li>Data upload from multiples sources:
+
+<ul>
+<li>Googlesheets, local files, url {dsmodules}</li>
+<li>Datasketch Open Data {dsconnect}</li>
+</ul></li>
+<li>Export data and results
+
+<ul>
+<li>Download in multiple formats {dsmodules}</li>
+<li>Publish to Datasketch Library {dsconnect}</li>
+</ul></li>
+<li>Multi-language support {shi18ny}</li>
 <li>Custom inputs (search, color palettes, etc) {shinyinvoer}</li>
-<li>Use data types for humans when possible {homodatum}</li>
+<li>Use tidy data types for humans when possible {homodatum} {datafringe}</li>
 <li>Use data validations for table inputs {hotr} with dictionaries {datafringe}</li>
-<li>Use parametrized contents when possible {parmesan}</li>
+<li>Use parametrized apps from config files {parmesan}</li>
 </ul>
 
-<h3 id="deployment">Deployment</h3>
+<h3 id="package-structure">Package structure</h3>
 
-<p>TODO:  How to deploy apps with github actions automatically</p>
+<p><img src="/images/ds-apps-pkgs-1.jpg" alt="" /></p>
+
+<p><img src="/images/ds-apps-pkgs-2.jpg" alt="" /></p>
+
+<h2 id="generic-app-components">Generic app components</h2>
+
+<ul>
+<li>Layout <a href="http://github.com/datasketch/shinypanels" target="_blank">{shinypanels}</a></li>
+<li>Interact with Datasketch library <a href="http://github.com/datasketch/dsconnect" target="_blank">{dsconnect}</a></li>
+<li>Interactive table input <a href="http://github.com/datasketch/hotr" target="_blank">{hotr}</a></li>
+</ul>
+
+<h2 id="data-packages">Data packages</h2>
+
+<ul>
+<li>Data types for humans <a href="http://github.com/datasketch/homodatum" target="_blank">{homodatum}</a></li>
+<li>Tidy Data for Humans <a href="http://github.com/datasketch/datafringe" target="_blank">{datafringe}</a></li>
+</ul>
+
+<h2 id="visualization-packages">Visualization packages</h2>
+
+<ul>
+<li>Ggplot wrapper  <a href="http://github.com/datasketch/ggmagic" target="_blank">{ggmagic}</a></li>
+<li>Highcharts wrapper  <a href="http://github.com/datasketch/hgchmagic" target="_blank">{ggmagic}</a></li>
+<li>Leaflet wrapper  <a href="http://github.com/datasketch/lfltmagic" target="_blank">{ggmagic}</a></li>
+<li>Geo data  <a href="http://github.com/datasketch/geodata" target="_blank">{geodata}</a></li>
+</ul>
 
 <h2 id="develop-specific-apps">Develop specific apps</h2>
+
+<h3 id="app-pipeline">App pipeline</h3>
+
+<p>See galley of live apps here
+<a href="https://airtable.com/shrCThQAEq8KHGDR2" target="_blank">https://airtable.com/shrCThQAEq8KHGDR2</a></p>
+
+<p>Development roadmap
+<a href="https://airtable.com/shr1PJHKuFYcEEdGQ" target="_blank">https://airtable.com/shr1PJHKuFYcEEdGQ</a></p>
+
+<h3 id="how-to-name-app-repositories">How to name app repositories</h3>
 
 <p>All open source apps live in <a href="http://github.com/datasketch" target="_blank">http://github.com/datasketch</a> and the repositories must comply with the following naming convention <code>http://github.com/datasketch/app_key</code> where <code>key</code> is the unique identifier for each app.</p>
 
@@ -222,19 +268,48 @@ Features All apps should have the following funcionalities
 <li><code>.gitignore</code> Ignored files</li>
 </ul>
 
-<p>The repository <code>http://github.com/datasketch/app_structure</code> contains a sample app you can clone to start off.</p>
+<p>TODO The repository <code>http://github.com/datasketch/app_structure</code> contains a sample app you can clone to start off.</p>
 
 <h3 id="submitting-an-app-for-review-or-publication">Submitting an App for review or publication</h3>
 
-<p>When you come up with your own Datasketch App that you want to publish, make sure it aligns with everything outlined in [How to contribute] TODO</p>
+<p>We are not yet ready for external contributions. Contact us and we will keep you posted.</p>
 
-<h3 id="sugested-gitignore">Sugested .gitignore</h3>
+<h3 id="coding-guidelines">Coding guidelines</h3>
+
+<p>TODO Add Datasketch R coding guidelines</p>
+
+<p>Suggested .gitignore for apps</p>
 
 <pre><code>.Rproj.user
 .Rhistory
 .RData
 .Ruserdata
 rsconnect
+</code></pre>
+
+<p>Suggested .gitignore for packages</p>
+
+<pre><code># History files
+.Rhistory
+.Rapp.history
+
+# Example code in package build process
+*-Ex.R
+
+# RStudio files
+.Rproj.user/
+.Rproj.user/*
+
+# RData
+.RData
+
+# produced vignettes
+vignettes/*.html
+vignettes/*.pdf
+
+#*.Rproj
+.Rproj.user
+.DS_Store
 </code></pre>
 
   </div>
