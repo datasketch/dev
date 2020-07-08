@@ -1,190 +1,275 @@
 <!DOCTYPE html>
-<html lang="es">
-<head>
+<html>
 	<meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta http-equiv="X-UA-Compatible" content="ie=edge">
-
-<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-
-
-
-  
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Arimoblog">
-  <style>
-    html {
-      font-family: Arimoblog, sans-serif;
-    }
-  </style>
-
-
-
-  
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Didact&#43;Gothic">
-  <style>
-    h1, h2, h3, h4, h5, h6 {
-      font-family: Didact Gothic, sans-serif;
-    }
-  </style>
-
-
-
+<link rel="stylesheet" href='/css/tailwind-1.3.5.min.css'>
 <link rel="stylesheet" href='/css/titi.css'>
+<link rel="stylesheet" href='/css/extend.css'>
 
 
 
 
-<title>
+
+
+
   
-    Apps | Datasketch developers
+    
+    
+      
+    
+    
   
-</title>
+    
+    
+    
+  
+  
+  
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:400,500%7cPT&#43;Serif">
 
 
 
-<meta name="description" content="">
-
-
-<meta itemprop="name" content="Apps">
-<meta itemprop="description" content="">
+  <title>Datasketch Apps - Datasketch Dev</title>
 
 
 
-<meta property="og:title" content="Apps" />
-<meta property="og:description" content="" />
-<meta property="og:type" content="website" />
-<meta property="og:url" content="/apps/" />
-
-
-
-<meta name="twitter:card" content="summary"/>
-<meta name="twitter:title" content="Apps"/>
-<meta name="twitter:description" content=""/>
-
-
-</head>
-<body>
-	<div id="wrapper" class="column">
-		
-
-
-<div
-  class="burger-menu column v-centered"
-  style="background: #dddddd; color: black"
->
-  <div class="container">
-    <ul class="burger-menu--items">
-      
-      
-        
-          <li class="burger-menu--item burger-menu--nav-item"><a href="/">Home</a></li>
-        
-          <li class="burger-menu--item burger-menu--nav-item"><a href="/what/">What are we building</a></li>
-        
-          <li class="burger-menu--item burger-menu--nav-item"><a href="/blog/">Blog</a></li>
-        
-          <li class="burger-menu--item burger-menu--nav-item"><a href="/contribuitor-guidelines/">Contribuitor Guidelines</a></li>
-        
-          <li class="burger-menu--item burger-menu--nav-item"><a href="/apps/how-to-develop-apps/">How to develop Datasketch Apps</a></li>
-        
-      
-    </ul>
-  </div>
-</div>
-
+	<body class="min-h-screen flex flex-col">
 		
 
 
 
 
-
-<header
-  style="background: #dddddd; color: black"
-  class="no-fixed"
->
-  <nav class="container line v-centered justify-between">
-    <div class="nav__left line v-centered">
-      
-      
-        <div class="burger only-mobile">
-          <div class="burger-bar burger-bar--top" style="background: black"></div>
-          <div class="burger-bar burger-bar--mid" style="background: black"></div>
-          <div class="burger-bar burger-bar--bottom" style="background: black"></div>
-        </div>
-      
-      <a href="/" class="line v-centered nav__logo">
-        
-          <img src="/images/datasketch-logo.svg" alt="Logo Datasketch developers" width="80px">
-        
+<header id="main-header" data-config="{&#34;behavior&#34;:&#34;sticky&#34;,&#34;bg_color&#34;:&#34;&#34;,&#34;bg_color_class&#34;:&#34;bg-gray-800&#34;,&#34;logo&#34;:&#34;images/datasketch.svg&#34;,&#34;text_color&#34;:&#34;#ffffff&#34;,&#34;text_color_class&#34;:&#34;&#34;}" class="w-full h-16 px-4 z-10">
+  <nav class="h-full flex flex-col items-center md:justify-between md:flex-row">
+    
+    <div class="w-full h-full flex justify-between items-center md:w-auto">
+      <a href="/">
+        <img class="max-w-xs" src="/images/datasketch.svg" alt="">
       </a>
+      <div class="flex items-center space-x-4 md:hidden">
+        
+          <button id="sidebar-toggle" style="color: #ffffff;" class="">
+            <svg class="fill-current" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24"><path d="M4 5h16a1 1 0 0 1 0 2H4a1 1 0 1 1 0-2zm0 6h16a1 1 0 0 1 0 2H4a1 1 0 0 1 0-2zm0 6h16a1 1 0 0 1 0 2H4a1 1 0 0 1 0-2z"/></svg>
+          </button>
+        
+        
+            
+  <a href="https://twitter.com/datasketch" target="_blank" rel="noopener noreferrer">
+    <img src='/images/tw.svg' alt="">
+  </a>
+
+
+  <a href="mailto:info@datasketch.co">
+    <img src='/images/mail.svg' alt="">
+  </a>
+
+
+  <a href="https://facebook.com/datasketch/" target="_blank" rel="noopener noreferrer">
+    <img src='/images/fb.svg' alt="">
+  </a>
+
+        
+      </div>
     </div>
-    <div class="nav__right line v-centered">
+    
+    <div class="nav-links">
       
         
-          <a href="/">Home</a>
         
-          <a href="/what/">What are we building</a>
+          <a href="/blog/" class='' title="Blog">Blog</a>
         
-          <a href="/blog/">Blog</a>
+          <a href="/apps/" class='is-active' title="Datasketch Apps">Datasketch Apps</a>
         
-          <a href="/contribuitor-guidelines/">Contribuitor Guidelines</a>
+          <a href="/packages-and-libraries/" class='' title="Packages and libraries">Packages and libraries</a>
         
-          <a href="/apps/how-to-develop-apps/">How to develop Datasketch Apps</a>
+          <a href="/post/2020-07-07-what-are-we-doing/" class='' title="What are we doing">What are we doing</a>
         
       
-      
-        <ul class="nav__social-icons line v-centered">
-          
-            
-            <li>
-              <a
-                href="https://twitter.com/datasketch"
-                target="_blank"
-              >
-                <i class="fa fa-twitter"></i>
-              </a>
-            </li>
-          
-            
-            <li>
-              <a
-                href="https://www.facebook.com/datasketch/?fref=ts"
-                target="_blank"
-              >
-                <i class="fa fa-facebook"></i>
-              </a>
-            </li>
-          
-        </ul>
-      
+      <div
+        class="hidden items-center space-x-4 md:flex">
+        
+  <a href="https://twitter.com/datasketch" target="_blank" rel="noopener noreferrer">
+    <img src='/images/tw.svg' alt="">
+  </a>
+
+
+  <a href="mailto:info@datasketch.co">
+    <img src='/images/mail.svg' alt="">
+  </a>
+
+
+  <a href="https://facebook.com/datasketch/" target="_blank" rel="noopener noreferrer">
+    <img src='/images/fb.svg' alt="">
+  </a>
+
+      </div>
     </div>
   </nav>
 </header>
 
-		<main id="content" class="column item-fill">
+		<main id="main-content" class="flex-grow">
 			
-  
+  <div class="overflow-x-hidden">
+    
+    
+  </div>
+  <div class="page-post-content px-4 w-full mx-auto leading-loose sm:w-5/6 md:w-3/4 md:text-lg lg:w-7/12 xl:w-1/2">
+    <h2 id="wip">WIP</h2>
+<p>(check back later)</p>
+<h2 id="generic-apps">Generic Apps</h2>
+<h3 id="objective">Objective</h3>
+<p>Develop many apps at once that share the same funcionalities.</p>
+<h3 id="features">Features</h3>
+<p>All apps should have the following funcionalities</p>
+<ul>
+<li>Same layout {shinypanles}
+<ul>
+<li>Data Panels
+<ul>
+<li>Data upload</li>
+<li>Data preview or tweaking</li>
+</ul>
+</li>
+<li>Visualization Panels
+<ul>
+<li>Inputs, controls and options for users</li>
+<li>Result previews</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Data upload from multiples sources:
+<ul>
+<li>Googlesheets, local files, url {dsmodules}</li>
+<li>Datasketch Open Data {dsconnect}</li>
+</ul>
+</li>
+<li>Export data and results
+<ul>
+<li>Download in multiple formats {dsmodules}</li>
+<li>Publish to Datasketch Library {dsconnect}</li>
+</ul>
+</li>
+<li>Multi-language support {shi18ny}</li>
+<li>Custom inputs (search, color palettes, etc) {shinyinvoer}</li>
+<li>Use tidy data types for humans when possible {homodatum} {datafringe}</li>
+<li>Use data validations for table inputs {hotr} with dictionaries {datafringe}</li>
+<li>Use parametrized apps from config files {parmesan}</li>
+</ul>
+<h3 id="package-structure">Package structure</h3>
+<p><img src="/images/ds-apps-pkgs-1.jpg" alt=""></p>
+<p><img src="/images/ds-apps-pkgs-2.jpg" alt=""></p>
+<h2 id="generic-app-components">Generic app components</h2>
+<ul>
+<li>Layout <a href="http://github.com/datasketch/shinypanels">{shinypanels}</a></li>
+<li>Interact with Datasketch library <a href="http://github.com/datasketch/dsconnect">{dsconnect}</a></li>
+<li>Interactive table input <a href="http://github.com/datasketch/hotr">{hotr}</a></li>
+</ul>
+<h2 id="data-packages">Data packages</h2>
+<ul>
+<li>Data types for humans <a href="http://github.com/datasketch/homodatum">{homodatum}</a></li>
+<li>Tidy Data for Humans <a href="http://github.com/datasketch/datafringe">{datafringe}</a></li>
+</ul>
+<h2 id="visualization-packages">Visualization packages</h2>
+<ul>
+<li>Ggplot wrapper  <a href="http://github.com/datasketch/ggmagic">{ggmagic}</a></li>
+<li>Highcharts wrapper  <a href="http://github.com/datasketch/hgchmagic">{ggmagic}</a></li>
+<li>Leaflet wrapper  <a href="http://github.com/datasketch/lfltmagic">{ggmagic}</a></li>
+<li>Geo data  <a href="http://github.com/datasketch/geodata">{geodata}</a></li>
+</ul>
+<h2 id="develop-specific-apps">Develop specific apps</h2>
+<h3 id="app-pipeline">App pipeline</h3>
+<p>See galley of live apps here
+<a href="https://airtable.com/shrCThQAEq8KHGDR2">https://airtable.com/shrCThQAEq8KHGDR2</a></p>
+<p>Development roadmap
+<a href="https://airtable.com/shr1PJHKuFYcEEdGQ">https://airtable.com/shr1PJHKuFYcEEdGQ</a></p>
+<h3 id="how-to-name-app-repositories">How to name app repositories</h3>
+<p>All open source apps live in <a href="http://github.com/datasketch">http://github.com/datasketch</a> and the repositories must comply with the following naming convention <code>http://github.com/datasketch/app_key</code> where <code>key</code> is the unique identifier for each app.</p>
+<p>The code of the apps must have the following structure:</p>
+<ul>
+<li><code>app.R</code> Code for the app</li>
+<li><code>www</code> custom assets for the app. When it is the same in many app, consider incorporating directly in {shinypanels}</li>
+<li><code>app.Rproj</code> Rstudio project</li>
+<li><code>.gitignore</code> Ignored files</li>
+</ul>
+<p>TODO The repository <code>http://github.com/datasketch/app_structure</code> contains a sample app you can clone to start off.</p>
+<h3 id="submitting-an-app-for-review-or-publication">Submitting an App for review or publication</h3>
+<p>We are not yet ready for external contributions. Contact us and we will keep you posted.</p>
+<h3 id="coding-guidelines">Coding guidelines</h3>
+<p>TODO Add Datasketch R coding guidelines</p>
+<p>Suggested .gitignore for apps</p>
+<pre><code>.Rproj.user
+.Rhistory
+.RData
+.Ruserdata
+rsconnect
+</code></pre><p>Suggested .gitignore for packages</p>
+<pre><code># History files
+.Rhistory
+.Rapp.history
+
+# Example code in package build process
+*-Ex.R
+
+# RStudio files
+.Rproj.user/
+.Rproj.user/*
+
+# RData
+.RData
+
+# produced vignettes
+vignettes/*.html
+vignettes/*.pdf
+
+#*.Rproj
+.Rproj.user
+.DS_Store
+</code></pre>
+  </div>
 
 		</main>
 		
-
-<footer style="background: white; color: black">
-  <div class="footer__inner text-center">
-    Datasketch - Developers
-    <div style="display: flex; align-items: center; flex-wrap: wrap; justify-content: center">
-      <div style="max-width: 224px;">
-        <img src='/images/datasketch.svg' alt="">
+<footer
+  style="background-color: ; color: ;"
+  class='bg-gray-900 text-white'
+>
+  <div class="flex flex-wrap items-center px-16 py-12">
+    <div class="w-full md:w-1/3 flex flex-col items-center">
+      <img class="sm:w-1/2" src='/images/datasketch-vertical.svg' alt="">
+    </div>
+    <div class="w-full md:w-1/3 flex flex-col items-center  mt-10 md:mt-0">
+      <p class="uppercase text-xl font-bold">Comparte</p>
+      <div class="flex items-center mt-4">
+        
+          <a class="mr-4" href="https://twitter.com/datasketch" target="_blank" rel="noopener noreferrer">
+            <img src='/images/tw.svg' alt="">
+          </a>
+        
+        
+          <a class="mr-4" href="mailto:info@datasketch.co">
+            <img src='/images/mail.svg' alt="">
+          </a>
+        
+        
+          <a class="mr-0" href="https://facebook.com/datasketch/" target="_blank" rel="noopener noreferrer">
+            <img src='/images/fb.svg' alt="">
+          </a>
+        
       </div>
+    </div>
+    <div class="w-full md:w-1/3 flex flex-col items-center mt-10 md:mt-0">
+      <div class="flex items-center">
+        <img class="mr-4" src='/images/cc.svg'>
+        <img class="mr-4" src='/images/by.svg'>
+        <img class="mr-0" src='/images/sa.svg'>
+      </div>
+      <p class="mt-4 w-64 text-sm">Todo el material en esta página es <a href="https://creativecommons.org/licenses/by-sa/4.0/" class="underline">CC-BY-SA</a>. Si reusas o adaptas recursos de esta página, por favor vincula y referencia nuestro artículo o sitio web.</p>
     </div>
   </div>
 </footer>
 
-	</div>
-	
-	
-	
-	<script src='/js/titi.js'></script>
-	
-	
-</body>
+		<script src='/js/header.js'></script>
+	</body>
+
 </html>

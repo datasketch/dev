@@ -55,3 +55,5 @@ rsconnect/
 .Rproj.user
 
 .DS_Store
+resources
+public

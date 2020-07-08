@@ -1,52 +1,43 @@
-baseUrl = "/"
-title = "Datasketch developers"
+baseURL = "/"
+publishDir="docs/"
+languageCode = "es-es"
+title = "Datasketch Dev"
 theme = "hugo-titi"
-disqusShortname = "datasketch"
-ignoreFiles = ["\\.Rmd$", "\\.Rmarkdown$", "_files$", "_cache$"]
-publishDir="docs"
+themesDir = "themes"
+# googleAnalytics = ""
 
-[blackfriday]
-  hrefTargetBlank = true
-
-
-#Parametros de configuración
 [params]
-  [params.fonts]
-    body = "Arimoblog"
-    headings = "Didact Gothic"
+  [params.social]
+    facebook = "https://facebook.com/datasketch/"
+    twitter = "https://twitter.com/datasketch"
+    email = "info@datasketch.co"
+    always_visible = true
+
+  [params.header]
+    logo = "images/datasketch.svg"
+    bg_color = ""
+    text_color = "#ffffff"
+    bg_color_class = "bg-gray-800"
+    text_color_class = ""
+    # One of
+    # sticky: always sticky on top
+    # normal: static positioned
+    # mixed: sticky after first child element of #content is offscreen
+    behavior = "sticky"
+
   [params.footer]
-    text = "Datasketch - Developers"
-    bg = "white"
-    color = "black"
-  [params.nav]
-    bg = "#dddddd"
-    color = "black"
-    logo = "images/datasketch-logo.svg"
-    logowidth = "80px"
-    fixed = false
-  [[params.social]]
-    icon = "twitter"
-    url = "https://twitter.com/datasketch"
-  [[params.social]]
-    icon = "facebook"
-    url = "https://www.facebook.com/datasketch/?fref=ts"
-    
-#Barra de navegación
-[menu]
-  [[menu.nav]]
-    name = "Home"
-    url = "/"
-    weight = 1
-  # [[menu.burger]]
-  #   name = "Inicio"
-  #   url = "/"
-  #   weight = 1
-  # [[menu.burger]]
-  #   name = "Acerca de"
-  #   url = "/que-es"
-  # [[menu.burger]]
-  #   name = "Planes de Acción"
-  #   url = "/planes-de-accion"
-  # [[menu.burger]]
-  #   name = "Blog"
-  #   url = "/blog"
+    # The path inside the static folder
+    # Note there is no leading nor trailing slash
+    logo = "images/datasketch-vertical.svg"
+
+    bg_color = ""
+    text_color = ""
+    bg_color_class = "bg-gray-900"
+    text_color_class = "text-white"
+
+  [[params.fonts]]
+    family = "Montserrat"
+    weight = [400, 500]
+
+  [[params.fonts]]
+    family = "PT Serif"

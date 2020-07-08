@@ -13,5 +13,5 @@ Buy one of our products:
 
 ## How can I contribute
 
-For code read our contribuitor guidelines here (coming soon)
+For code read our contribuitor guidelines (coming soon)
  

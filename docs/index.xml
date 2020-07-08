@@ -1,61 +1,32 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Datasketch Dev on Datasketch developers</title>
+    <title>Blog on Datasketch Dev</title>
     <link>/</link>
-    <description>Recent content in Datasketch Dev on Datasketch developers</description>
+    <description>Recent content in Blog on Datasketch Dev</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Mon, 09 Dec 2019 14:00:20 -0500</lastBuildDate>
+    <language>es-es</language>
+    <lastBuildDate>Sat, 08 Dec 2018 20:07:33 -0500</lastBuildDate>
     
 	<atom:link href="/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
-      <title>What are we building</title>
-      <link>/what/</link>
-      <pubDate>Mon, 09 Dec 2019 14:00:20 -0500</pubDate>
+      <title>What are we doing</title>
+      <link>/post/2020-07-07-what-are-we-doing/</link>
+      <pubDate>Thu, 14 May 2020 14:48:51 -0500</pubDate>
       
-      <guid>/what/</guid>
-      <description>Apps Datasketch apps
-Static site themes For journalists</description>
+      <guid>/post/2020-07-07-what-are-we-doing/</guid>
+      <description>We are building a data science app store using shiny.  </description>
     </item>
     
     <item>
-      <title>Contribuitor Guidelines</title>
-      <link>/contribuitor-guidelines/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <title>Blog</title>
+      <link>/blog/</link>
+      <pubDate>Sat, 08 Dec 2018 20:07:33 -0500</pubDate>
       
-      <guid>/contribuitor-guidelines/</guid>
-      <description>This is how you can contribute</description>
-    </item>
-    
-    <item>
-      <title>How to develop Datasketch Apps</title>
-      <link>/apps/how-to-develop-apps/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>/apps/how-to-develop-apps/</guid>
-      <description>Generic Apps Objective Develop many apps at once that share the same funcionalities.
-Features All apps should have the following funcionalities
- Same layout {shinypanles}  Data Panels Data upload Data preview or tweaking Visualization Panels Inputs, controls and options for users Result previews  Data upload from multiples sources:  Googlesheets, local files, url {dsmodules} Datasketch Open Data {dsconnect}  Export data and results  Download in multiple formats {dsmodules} Publish to Datasketch Library {dsconnect}  Multi-language support {shi18ny} Custom inputs (search, color palettes, etc) {shinyinvoer} Use tidy data types for humans when possible {homodatum} {datafringe} Use data validations for table inputs {hotr} with dictionaries {datafringe} Use parametrized apps from config files {parmesan}  Package structure Generic app components  Layout {shinypanels} Interact with Datasketch library {dsconnect} Interactive table input {hotr}  Data packages  Data types for humans {homodatum} Tidy Data for Humans {datafringe}  Visualization packages  Ggplot wrapper {ggmagic} Highcharts wrapper {ggmagic} Leaflet wrapper {ggmagic} Geo data {geodata}  Develop specific apps App pipeline See galley of live apps here https://airtable.</description>
-    </item>
-    
-    <item>
-      <title>Publishing our first package on CRAN</title>
-      <link>/blog/avances-hacia-el-iv-plan-de-accion/</link>
-      <pubDate>Wed, 04 Mar 2020 17:00:58 -0500</pubDate>
-      
-      <guid>/blog/avances-hacia-el-iv-plan-de-accion/</guid>
-      <description>This is how we did it</description>
-    </item>
-    
-    <item>
-      <title>Planning development</title>
-      <link>/blog/que-aprendimos-ii-plan-de-acci%C3%B3n-y-que-esperamos-del-tercero/</link>
-      <pubDate>Tue, 04 Feb 2020 19:27:53 -0500</pubDate>
-      
-      <guid>/blog/que-aprendimos-ii-plan-de-acci%C3%B3n-y-que-esperamos-del-tercero/</guid>
-      <description>This is how we are organizing our development workflow</description>
+      <guid>/blog/</guid>
+      <description>Recent Posts Introducing {shi18ny}: Internationalization for shinyapps Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</description>
     </item>
     
     <item>
@@ -65,7 +36,19 @@ Features All apps should have the following funcionalities
       
       <guid>/faq/</guid>
       <description>How can I support your projects Buy one of our products:
- Datasketch App subscription Datasketch Store  How can I contribute For code read our contribuitor guidelines here (coming soon)</description>
+ Datasketch App subscription Datasketch Store  How can I contribute For code read our contribuitor guidelines (coming soon)</description>
+    </item>
+    
+    <item>
+      <title>Datasketch Apps</title>
+      <link>/apps/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/apps/</guid>
+      <description>WIP (check back later)
+Generic Apps Objective Develop many apps at once that share the same funcionalities.
+Features All apps should have the following funcionalities
+ Same layout {shinypanles}  Data Panels  Data upload Data preview or tweaking   Visualization Panels  Inputs, controls and options for users Result previews     Data upload from multiples sources:  Googlesheets, local files, url {dsmodules} Datasketch Open Data {dsconnect}   Export data and results  Download in multiple formats {dsmodules} Publish to Datasketch Library {dsconnect}   Multi-language support {shi18ny} Custom inputs (search, color palettes, etc) {shinyinvoer} Use tidy data types for humans when possible {homodatum} {datafringe} Use data validations for table inputs {hotr} with dictionaries {datafringe} Use parametrized apps from config files {parmesan}  Package structure Generic app components  Layout {shinypanels} Interact with Datasketch library {dsconnect} Interactive table input {hotr}  Data packages  Data types for humans {homodatum} Tidy Data for Humans {datafringe}  Visualization packages  Ggplot wrapper {ggmagic} Highcharts wrapper {ggmagic} Leaflet wrapper {ggmagic} Geo data {geodata}  Develop specific apps App pipeline See galley of live apps here https://airtable.</description>
     </item>
     
     <item>

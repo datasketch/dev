@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Posts on Datasketch Dev</title>
+    <link>/post/</link>
+    <description>Recent content in Posts on Datasketch Dev</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>es-es</language>
+    <lastBuildDate>Thu, 14 May 2020 14:48:51 -0500</lastBuildDate>
+    
+	<atom:link href="/post/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>What are we doing</title>
+      <link>/post/2020-07-07-what-are-we-doing/</link>
+      <pubDate>Thu, 14 May 2020 14:48:51 -0500</pubDate>
+      
+      <guid>/post/2020-07-07-what-are-we-doing/</guid>
+      <description>We are building a data science app store using shiny.  </description>
+    </item>
+    
+  </channel>
+</rss>

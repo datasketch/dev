@@ -1,0 +1,20 @@
+/**
+  * Theme related
+  */
+a.is-active {
+  color: bisque;
+}
+
+/**
+  * Colors
+  */
+
+/* For a custom background or text color we recommend the follow convention
+.bg-colorname {
+  background-color: #2a2a2a;
+}
+
+.text-colorname {
+  color: #2a2a2a;
+}
+*/
