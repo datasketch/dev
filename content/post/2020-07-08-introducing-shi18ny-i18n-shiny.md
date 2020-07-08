@@ -1,8 +1,8 @@
 ---
 title: "Introducing {shi18ny}: Internationalization for shinyapps"
-date: 2020-07-08T14:23:34-05:00
+date: 2020-07-07T14:23:34-05:00
 draft: false
-description: "Etiam nec nibh aliquam, ornare quam eget, feugiat leo. Maecenas ut justo ac magna convallis cursus. Suspendisse ac tempus quam."
+description: ""
 # One of normal or cover
 render_layout: "normal"
 ---

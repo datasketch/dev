@@ -12,6 +12,16 @@
     
     
     <item>
+      <title>Introducing {shi18ny}: Internationalization for shinyapps</title>
+      <link>/post/2020-07-08-introducing-shi18ny-i18n-shiny/</link>
+      <pubDate>Tue, 07 Jul 2020 14:23:34 -0500</pubDate>
+      
+      <guid>/post/2020-07-08-introducing-shi18ny-i18n-shiny/</guid>
+      <description>At Datasketch, we want to make data science more accessible and more inclusive, and we believe that one of the big challenges in bringing the data to the people is about translating the language in which the information is presented.
+For more accessibility and inclusion, we need easy ways to create data visualization and analysis tools so that non-coders and non-statisticians can understand data; and the ability to internationalize this information: to translate these tools into multiple languages and communicate the information to people all across the world.</description>
+    </item>
+    
+    <item>
       <title>What are we doing</title>
       <link>/post/2020-07-07-what-are-we-doing/</link>
       <pubDate>Thu, 14 May 2020 14:48:51 -0500</pubDate>
