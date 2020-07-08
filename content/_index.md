@@ -16,7 +16,7 @@ menu:
 
 Create shiny apps in multiples languages
 
-[See more]()
+[See more](post/2020-07-08-introducing-shi18ny-i18n-shiny/)
 
 
 
