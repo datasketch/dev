@@ -6,32 +6,139 @@ menu:
     weight: 2
 ---
 
+## PACKAGES AND LIBRARES
 
-# R Packages
+Most of the following packages 
 
-## {shinypanels}
 
-New layout for shiny apps
+### Shiny
 
-## {shi18ny}
+#### {shinypanels}
 
-Shiny internationalization for shiny apps in multiple languages
+Collapsible panels layout for shiny apps.
 
-## {hotr}
 
-Handsontable based data input, featuring data validation
+- CRAN https://cran.r-project.org/web/packages/shinypanels/index.html
+- Github https://github.com/datasketch/shinypanels/
+- Docs (coming soon)
 
-## {shinyinvoer}
+![](shinypanels.png)
+
+
+#### {shi18ny}
+
+Shiny internationalization for multilingual shiny apps.
+
+- Github https://github.com/datasketch/shi18ny/
+- Docs https://shi18ny.datasketch.dev 
+
+
+#### {hotr}
+
+Handsontable based table input for shiny
+
+- Github https://github.com/datasketch/shinypanels/
+- Docs (coming soon)
+
+#### {shinyinvoer}
 
 More shiny inputs for colors, button images and search.
 
-## {app_*}
+- Github https://github.com/datasketch/shinyinvoer/
+- Docs (coming soon)
 
-Each of our apps has its own repo
+#### {dsmodules}
 
-## {homodatum}
+Shiny modules for multiple uses, like data input and data download.
 
-Datatypes for humans
+- Github https://github.com/datasketch/dsmodules/
+- Docs (coming soon)
+
+#### {parmesan}
+
+Parametrized Shiny Apps.
+
+- Github https://github.com/datasketch/dsmodules/
+- Docs (coming soon)
 
 
+### Data and data types
+
+#### {makeup}
+
+Format dates, numbers and strings in different locales and formats.
+
+- Github https://github.com/datasketch/makeup/
+- Docs (coming soon)
+
+#### {homodatum}
+
+Datatypes for humans.
+
+- Github https://github.com/datasketch/homodatum/
+- Docs (coming soon)
+
+
+#### {geodata}
+
+Geographic polygons for different regions.
+
+- Github https://github.com/datasketch/geodata/
+- Docs (coming soon)
+
+
+### Visualization
+
+#### {paletero}
+
+Color palettes and color transformations.
+
+- Github https://github.com/datasketch/paletero/
+- Docs (coming soon)
+
+#### {ggmagic}
+
+Datatypes for humans.
+
+- Github https://github.com/datasketch/ggmagic/
+- Docs (coming soon)
+
+#### {hgchmagic}
+
+Datatypes for humans.
+
+- Github https://github.com/datasketch/hgchmagic/
+- Docs (coming soon)
+
+#### {lfltmagic}
+
+Datatypes for humans.
+
+- Github https://github.com/datasketch/lfltmagic/
+- Docs (coming soon)
+
+#### {geomagic}
+
+Datatypes for humans.
+
+- Github https://github.com/datasketch/geomagic/
+- Docs (coming soon)
+
+
+### Static sites
+
+#### {hugodownTiti}
+
+Theme for `hugodown` sites.
+
+- Github https://github.com/datasketch/hugodownTiti/
+- Docs (coming soon)
+
+
+#### hugo-titi
+
+Hugo theme for engaging microsites
+
+- Github https://github.com/datasketch/hugo-titi/
+- Docs (coming soon)
 

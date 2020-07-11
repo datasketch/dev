@@ -1,0 +1,61 @@
+body {
+    font-family: IBM Plex Sans;
+    background-color: #fcfcfc;
+    color: #293845;
+
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-weight: bold;
+    line-height: 1.25;
+    color: #293845;
+}
+
+a {
+    /*font-weight: bold;*/
+    color: #da1c95;
+
+}
+
+pre {
+	background-color: #f8f8f8;
+	color: #293845;
+	padding-left: 15px;
+	padding-right: 15px;
+	font-size: 0.9em;
+	border: 1px solid #eee;
+	overflow-x: auto;
+
+}
+
+code {
+	background-color: #f8f8f8;
+	color: #293845;
+	padding-left: 5px;
+	padding-right: 5px;
+	font-size: 0.9em;
+	border: 1px solid #eee;
+	overflow-x: auto;
+}
+
+.nav-links a {
+    color: #222526;
+    font-family: Ubuntu;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 0.75px;
+    font-size: 0.875rem;
+}
+
+.nav-links a:hover {
+    color: #da1c95;
+}
+
+.nav-links>*~*,
+.nav-links.is-active>*~* {
+    margin-left: 1.75rem;
+}
+
+.nav-links a img {
+    filter: brightness (0);
+}

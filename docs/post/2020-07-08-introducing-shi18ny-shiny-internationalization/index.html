@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+<html>
+	<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href='/css/tailwind-1.3.5.min.css'>
+<link rel="stylesheet" href='/css/titi.css'>
+<link rel="stylesheet" href='/css/extend.css'>
+<link rel="stylesheet" href='/css/custom.css'>
+
+
+
+  
+<script type="application/javascript">
+var doNotTrack = false;
+if (!doNotTrack) {
+	window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+	ga('create', 'UA-164320300-2', 'auto');
+	
+	ga('send', 'pageview');
+}
+</script>
+<script async src='https://www.google-analytics.com/analytics.js'></script>
+
+
+
+
+
+
+
+  
+    
+    
+      
+    
+    
+  
+  
+  
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=IBM&#43;Plex&#43;Sans:400,500">
+
+
+
+  <title>Introducing {shi18ny}: Internationalization for shinyapps - Datasketch Dev</title>
+
+
+
+	<body class="min-h-screen flex flex-col">
+		
+
+
+
+
+<header id="main-header" data-config="{&#34;behavior&#34;:&#34;sticky&#34;,&#34;bg_color&#34;:&#34;#fcfcfc&#34;,&#34;bg_color_class&#34;:&#34;bg-gray-800&#34;,&#34;logo&#34;:&#34;images/datasketch.svg&#34;,&#34;text_color&#34;:&#34;#222526&#34;,&#34;text_color_class&#34;:&#34;&#34;}" class="w-full h-16 px-4 z-10">
+  <nav class="h-full flex flex-col items-center md:justify-between md:flex-row">
+    
+    <div class="w-full h-full flex justify-between items-center md:w-auto">
+      <a href="/">
+        <img class="max-w-xs" src="/images/datasketch.svg" alt="">
+      </a>
+      <div class="flex items-center space-x-4 md:hidden">
+        
+          <button id="sidebar-toggle" style="color: #222526;" class="">
+            <svg class="fill-current" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24"><path d="M4 5h16a1 1 0 0 1 0 2H4a1 1 0 1 1 0-2zm0 6h16a1 1 0 0 1 0 2H4a1 1 0 0 1 0-2zm0 6h16a1 1 0 0 1 0 2H4a1 1 0 0 1 0-2z"/></svg>
+          </button>
+        
+        
+            
+  <a href="https://twitter.com/datasketch" target="_blank" rel="noopener noreferrer">
+    <img src='/images/tw.svg' alt="">
+  </a>
+
+
+  <a href="mailto:info@datasketch.co">
+    <img src='/images/mail.svg' alt="">
+  </a>
+
+
+  <a href="https://facebook.com/datasketch/" target="_blank" rel="noopener noreferrer">
+    <img src='/images/fb.svg' alt="">
+  </a>
+
+        
+      </div>
+    </div>
+    
+    <div class="nav-links">
+      
+        
+        
+          <a href="/blog/" class='' title="Blog">Blog</a>
+        
+          <a href="/apps/" class='' title="Datasketch Apps">Datasketch Apps</a>
+        
+          <a href="/packages-and-libraries/" class='' title="Packages and libraries">Packages and libraries</a>
+        
+          <a href="/post/2020-07-07-what-are-we-doing/" class='' title="What are we doing">What are we doing</a>
+        
+      
+      <div
+        class="hidden items-center space-x-4 md:flex">
+        
+  <a href="https://twitter.com/datasketch" target="_blank" rel="noopener noreferrer">
+    <img src='/images/tw.svg' alt="">
+  </a>
+
+
+  <a href="mailto:info@datasketch.co">
+    <img src='/images/mail.svg' alt="">
+  </a>
+
+
+  <a href="https://facebook.com/datasketch/" target="_blank" rel="noopener noreferrer">
+    <img src='/images/fb.svg' alt="">
+  </a>
+
+      </div>
+    </div>
+  </nav>
+</header>
+
+		<main id="main-content" class="flex-grow">
+			
+  <div class="overflow-x-hidden">
+    
+      <div class="w-full text-center mx-auto py-16 px-4 sm:w-5/6 md:w-3/4 lg:w-7/12 xl:w-2/5">
+        <h1 class="text-5xl">Introducing {shi18ny}: Internationalization for shinyapps</h1>
+        
+          <p class="text-xl leading-tight mt-2 font-light">Make you shiny apps accessible to an international audience with {shi18ny}, a package to create multilingual apps. </p>
+        
+      </div>
+    
+    
+  </div>
+  <div class="page-post-content px-4 w-full mx-auto leading-loose sm:w-5/6 md:w-3/4 md:text-lg lg:w-7/12 xl:w-1/2">
+    <p>At <a href="http://datasketch.co">Datasketch</a>, we want to make data science more accessible and more inclusive, and we believe that one of the big challenges in bringing the data to the people is about translating the language in which the information is presented.</p>
+<p>For more accessibility and inclusion, we need
+easy ways to create data visualization and analysis tools so that non-coders and non-statisticians can understand data; and
+the ability to <strong>internationalize</strong> this information: to translate these tools into multiple languages and communicate the information to people all across the world.</p>
+<p>To solve this problem, we have created <code>shi18ny</code> (read: ‘shiny internationalization’), a package to translate your Shiny apps into 15 different languages - and we’re constantly working to add more!</p>
+<blockquote>
+<p>Can’t wait to find out more about the package and don’t want to read our motivational thoughts? Simply jump to the <a href="https://shi18ny.datasketch.dev/">documentation of the package</a>. Here you also find a list of all currently available languages.* Or watch our <a href="https://user2020.r-project.org/program/posters/">UseR2020 talk</a> on youtube: Shi18ny, Internationalization for Shiny Apps.</p>
+</blockquote>
+<p><img src="demo-1-shi18ny.gif" alt=""></p>
+<h2 id="motivation">Motivation</h2>
+<p>Breaking down the confusing masses of data that are available about global issues, such as the development of cases of the coronavirus, and making them available online through data visualization tools is crucial. In recent times <a href="https://www.fastcompany.com/90450827/its-official-data-visualization-has-gone-mainstream">Data Visualization has gone mainstream</a> up to the point where some charts like <a href="https://www.forbes.com/sites/evaamsen/2020/04/29/how-flatten-the-curve-is-on-its-way-to-become-a-historic-disease-image">&ldquo;Flatten the curve&rdquo; are becoming iconic</a> and coranavirus dashboards are now everywhere on the web, or at least in the English speaking part of the web.</p>
+<p>Many of the global databases, dashboards and platforms are written in English, looking at some estimates from the year 2008, we find that at that point around <a href="https://www.cambridge.org/core/journals/english-today/article/two-thousand-million/68BFD87E5C867F7C3C47FD0749C7D417">a third of the population of the world spoke English</a>. While this is a large number in absolute terms - and it is likely to have grown since then - we are still excluding the majority of the world’s population by catering only for the English-speaking part. And clearly, only a fraction of the English-speaking population speak English as their first language making it potentially difficult for the remaining part to truly understand the information and consequences communicated about global issues such as the corona crisis.</p>
+<p>This is why at Datasketch we wanted to come up with a way to translate data visualization apps in Shiny into other languages so that people all over the world can inform themselves about important global issues without having to be statisticians, mathematicians, or coders, and importantly, without having to know how to speak English.</p>
+<p>And yes, you could write a shiny app in your own language, but wouldn&rsquo;t it be nice to do it in multiple languages at once?</p>
+<h2 id="how-shi18ny-was-born">How <code>shi18ny</code> was born</h2>
+<p>To get inspiration for the implementation of a package that could put these concepts into practice, we looked around at other programming languages to see what’s already out there and came across the <code>NodeJS</code> <code>i18n</code> package (link: <a href="https://github.com/nodejs/i18n)">https://github.com/nodejs/i18n)</a>. This gave us some ideas towards the general implementation, we decided to enable translations in our package using <em>a dictionary with common data science terms</em> for easy keyword translations, and using <code>.yaml</code> files to enable custom translations of words and phrases not included in the dictionary, or to overwrite existing translations.</p>
+<p>Based on these ideas <code>shi18ny</code> was born. Let’s have a look at how you can use <code>shi18ny</code> to translate your own Shiny app.</p>
+<p><strong>But before we continue</strong>, we won’t leave you hanging any longer… you have probably been asking yourself since the beginning of this post - what on earth is the ‘18’ doing in <code>shi18ny</code>? As it turns out, there are 18 characters between the <strong>i</strong> and the <strong>n</strong> in the word <strong>internationalization</strong>. As simple as that.</p>
+<p>Don’t believe us? Here’s a tiny program to prove our point :)</p>
+<pre><code class="language-{r}" data-lang="{r}">nchar(&quot;nternationalization&quot;)
+paste0(&quot;i&quot;, nchar(&quot;nternationalizatio&quot;),&quot;n&quot;)
+</code></pre><h2 id="how-to-use-shi18ny">How to use <code>shi18ny</code></h2>
+<h3 id="get-started">Get started</h3>
+<p>To get started you need to install <code>shi18ny</code> in R. The easiest way to do this is to use the <code>remotes::install_github()</code> function. Note that the <code>remotes</code> package needs to be installed before you can run this function.</p>
+<pre><code class="language-{r" data-lang="{r"># install.packages(&quot;remotes&quot;)
+remotes::install_github(&quot;datasketch/shi18ny&quot;)
+</code></pre><p>If you are looking to install the package in order to contribute, you can go to the package documentation and follow the steps in the Getting Started (link) guide.</p>
+<h3 id="basic-examples">Basic examples</h3>
+<p>Before we start thinking about our Shiny app, let’s have a look at the base translation function that <code>shi18ny</code> uses for all translations. With the <code>i_</code> function, you can translate key words in the shape of strings, vectors and lists in the console. The following examples all use the default dictionary, as we haven’t defined any custom translations yet.</p>
+<pre><code class="language-{r" data-lang="{r"># 1. translate a string
+i_(&quot;hello&quot;, lang = &quot;de&quot;)
+
+# 2. translate a vector
+i_(c(&quot;hello&quot;, &quot;world&quot;), lang = &quot;de&quot;)
+
+# 3. translate a list - use the ‘keys’ parameter to define one or more keys that should be translated
+i_(list(id = &quot;hello&quot;, translate = &quot;world&quot;), lang = &quot;es&quot;, keys = &quot;translate&quot;)
+</code></pre><p>But what about words that aren’t in the dictionary or that you want to translate in a way that differs from the standard translation in the dictionary? For those we create a <code>yaml</code> file with custom translations.</p>
+<p>Let’s say, for example, that we want to be a bit more enthusiastic when we translate the English word ‘hello’ into German. Instead of ‘Hallo’, we want the translation to  be ‘Hallöchen!’. We also want to add a translation for the expression ‘how_are_you’ which is currently not in the dictionary (as this only includes keywords). All you have to do is create a <code>locale</code> directory in which you store your .yaml files with custom translations. In this case we are translating between English and German, so we will create a <code>locale/en.yaml</code> and a <code>locale/de.yaml</code> file for these custom translations. Let’s look at one of these files to see what the format looks like.</p>
+<pre><code class="language-{yaml" data-lang="{yaml"># de.yaml
+myslang:
+  how_are_you: Wie geht's?
+hello: Hallöchen!
+</code></pre><p>We can then translate our keywords using these custom translations just like we did before, as long as the .yaml files are in the correct file location.</p>
+<pre><code class="language-{r" data-lang="{r"># use custom translations
+i_(c(&quot;hello&quot;, &quot;myslang.how_are_you&quot;), lang = &quot;de&quot;)
+</code></pre><p>You can see that ‘hello’ was now translated with ‘Hallöchen!’ instead of as ‘Hallo’. To translate ‘how_are_you’, we had to include ‘myslang.’ to navigate through the nested .yaml file.</p>
+<p>Now that we’ve understood the basic functions, let’s take a look at some other functions you need to configure your Shiny translations, and how you can combine it all in your <code>app.R</code> code to create your international data app.</p>
+<h3 id="translate-your-app-with-shi18ny">Translate your app with <code>shi18ny</code></h3>
+<p>Let’s talk about the key functions you need to be aware of when internationalizing your app. First we’ll go through the functions that you’ll need to include in your UI, and next those that go in the Server part of your app.</p>
+<h4 id="ui">UI</h4>
+<p>Let’s look at the UI code of a very basic Shiny app and talk about the functions that we’re using.</p>
+<pre><code class="language-{r" data-lang="{r">ui &lt;- fluidPage(
+  useShi18ny(),
+  langSelectorInput(&quot;lang&quot;, position = &quot;fixed&quot;),
+  h1(ui_(&quot;hello&quot;)),
+  uiOutput(&quot;results&quot;)
+)
+</code></pre><p>First of all, there’s the <code>useShi18ny()</code> function which you always need to include in the UI part of your app to initialize the package. This runs the required client side javascript code to update translations.</p>
+<p>If you want to include a language selector widget in your app, you also need to include the <code>langSelectorInput</code> function in your UI. You can leave this out if you only want the users of your app to be able to change the language by adding a query parameter to the URL (for example: your_app_url.com/?lang=de).</p>
+<p>To directly translate text within the UI of your app, it needs to be wrapped in the <code>ui_</code> function. This uses the <code>i_</code> function we talked about earlier to translate text in the UI. When the language gets changed by the user, the <code>ui_</code> function gets updated by <code>uiLangUpdate</code> in the Server, which we’ll have a look at in a minute.</p>
+<p>In this example, we will include a <code>renderUI</code> in the Server for an output called ‘results’ to translate some more text in the app. This is why we included <code>uiOutput</code> in our UI.</p>
+<h4 id="server">Server</h4>
+<p>Server
+For our very simple international Shiny app, the code for the corresponding Server look like this:</p>
+<pre><code class="language-{r" data-lang="{r">server &lt;- function(input, output, session) {
+  i18n &lt;- list(
+    defaultLang = &quot;en&quot;,
+    availableLangs = c(&quot;en&quot;, &quot;de&quot;),
+    localeDir = &quot;locale&quot;,
+    fallbacks = shi18ny:::default_fallbacks,
+    queryParameter = &quot;lang&quot;
+  )
+
+  lang &lt;- callModule(langSelector,&quot;lang&quot;, i18n = i18n, showSelector = TRUE)
+
+  observeEvent(lang(),{
+    uiLangUpdate(input$shi18ny_ui_classes, lang())
+  })
+
+  output$results &lt;- renderUI({
+    list(
+      h1(i_(&quot;how_are_you&quot;,lang())),
+      br(),
+      h4(i_(&quot;language&quot;,lang()), lang())
+    )
+  })
+}
+
+</code></pre><p>First, we tell the <code>i18n</code> parameter how we want to configure our languages. Here we can define which language we want to have as our default language (<code>defaultLang</code>) and which languages should be available for translation (<code>availableLangs</code>); if we decide to include a language selector widget in our app, the available languages are those that will appear in the selector. By default this includes all 15 available languages.</p>
+<p>With the <code>localeDir</code> parameter we can change the file location of our custom translation <code>.yaml</code> files. The default directory is “locale” so if you don’t include this parameter you can still just add your custom translation files in a directory called “locale”.</p>
+<p>For some languages there may be gaps in the dictionary. You can use the <code>fallbacks</code> parameter to define another language to be used for the language that is currently selected for translation in case a particular word is missing in that language.</p>
+<p><em>If you notice any gaps in our dictionary and would like to help us fix those gaps, you can do so  by contributing to <code>shi18ny</code> (see <a href="https://shi18ny.datasketch.dev/articles/contributing.html/">How to contribute</a>) - we always greatly appreciate any help in improving our translations.</em></p>
+<p>By passing a string to <code>queryParameter</code> you can define the parameter users need to use to translate your app through the URL. This defaults to ‘lang’ so that users need to add <code>/?lang=d</code> to the URL to translate the app to German.</p>
+<p>Next we need to create a reactive (here we’ve called it <code>lang()</code>) which is updated as soon as the user selects a different language. We do this by calling the <code>langSelector</code> module and passing it the <code>i18n</code> configuration parameter we have just defined. We also connect it to our <code>langSelectorInput</code> by calling its id, and we choose here to actually show the language selector in our app by setting <code>showSelector</code> to be true.</p>
+<p>If we want to make translations directly in our UI using the <code>ui_</code> function, we need to make sure that we update the language used in <code>ui_</code> within the Server as soon as the user changes it. This is made sure in our example code by the <code>uiLangUpdate</code> function wrapped in an <code>obsobserveEvent</code> that depends on our reactive <code>lang()</code>.</p>
+<p>Last but not least we have a bit of code defining our <code>output</code>. In this case we’re just rendering some text that we have translated using the <code>i_</code> function.</p>
+<h3 id="basic-example-app">Basic example app</h3>
+<p>Now that we’ve looked at the individual building blocks we can put it all together in our app. Note that we’ve got a few custom translation in here - we’ve included the <code>.yaml</code> files we defined earlier to have a translation of ‘how_are_you’ and to overwrite the standard translation of ‘hello’.</p>
+<pre><code class="language-{r" data-lang="{r">library(shiny)
+library(shi18ny)
+
+shinyApp(
+
+ui &lt;- fluidPage(
+  useShi18ny(),
+  langSelectorInput(&quot;lang&quot;, position = &quot;fixed&quot;),
+  h1(ui_(&quot;hello&quot;)),
+  uiOutput(&quot;results&quot;)
+)
+
+server &lt;- function(input, output, session) {
+  i18n &lt;- list(
+    defaultLang = &quot;en&quot;,
+    availableLangs = c(&quot;en&quot;, &quot;de&quot;),
+    localeDir = &quot;locale&quot;,
+    fallbacks = shi18ny:::default_fallbacks,
+    queryParameter = &quot;lang&quot;
+  )
+  lang &lt;- callModule(langSelector,&quot;lang&quot;, i18n = i18n, showSelector = TRUE)
+  observeEvent(lang(),{
+    uiLangUpdate(input$shi18ny_ui_classes, lang())
+  })
+
+  output$results &lt;- renderUI({
+    list(
+      h1(i_(&quot;how_are_you&quot;,lang())),
+      br(),
+      h4(i_(&quot;language&quot;,lang()), lang())
+    )
+  })
+}
+
+options = list(height = 500)
+)
+</code></pre><h3 id="covid-19-example-app">COVID-19 example app</h3>
+<p><img src="covid-map-shi18ny.gif" alt=""></p>
+<p>We’ve seen how <code>shi18ny</code> can be used to translate a few keywords in a simple Shiny app. But earlier we talked about internationalizing important information to communicate global issues, so let’s look at an example of something a little more meaningful (and a little more complicated).</p>
+<p>Note that if you want to run the below example yourself, you also need to install our <code>lfltmagic</code> package, with which you can straightforwardly create beautiful leaflet maps for your Shiny apps. You can install it from our <a href="https://github.com/datasketch/lfltmagic">Github page</a>.</p>
+<pre><code class="language-{r" data-lang="{r">library(shiny)
+library(ggplot2)
+library(dplyr)
+library(leaflet)
+library(shi18ny)
+library(lfltmagic)
+
+shinyApp(
+
+load_data &lt;- read.csv(&quot;tidy-csse-langs.csv&quot;)
+
+max_date &lt;- max(load_data$date)
+
+data &lt;- load_data %&gt;%
+  group_by(country) %&gt;%
+  filter(date == max_date) %&gt;%
+  select(iso_alpha3, confirmed, country, en, de, es)
+
+ui &lt;- fluidPage(
+
+  useShi18ny(),
+  langSelectorInput(&quot;lang&quot;, position = &quot;fixed&quot;),
+  h3(ui_(&quot;internationalize&quot;)),
+  hr(),
+  fluidRow(
+    column(6,
+           leafletOutput(outputId = &quot;world_map&quot;)
+    )),
+  hr(),
+  h5(ui_(&quot;annotate&quot;)),
+  hr(),
+  uiOutput(&quot;datestamp&quot;)
+)
+
+server &lt;- function(input, output) {
+
+  i18n &lt;- list(
+    defaultLang = &quot;en&quot;,
+    availableLangs = c(&quot;de&quot;,&quot;en&quot;,&quot;es&quot;)
+  )
+
+  lang &lt;- callModule(langSelector,&quot;lang&quot;, i18n = i18n, showSelector = TRUE)
+
+  observeEvent(lang(),{
+    uiLangUpdate(input$shi18ny_ui_classes, lang())
+  })
+
+  output$world_map &lt;- renderLeaflet({
+
+    country = i_(&quot;country&quot;, lang())
+    cases = i_(&quot;cases&quot;, lang())
+
+    lflt_choropleth_Gcd(data,
+                        map_tiles = &quot;CartoDB&quot;,
+                        tooltip = paste0(&quot;&lt;b&gt;&quot;,country,&quot;:&lt;/b&gt; {&quot;,lang(),&quot;} &lt;/br&gt; &lt;b&gt;&quot;,cases,&quot;:&lt;/b&gt; {confirmed}&quot;),
+                        palette_colors = c(&quot;#99f2c8&quot;, &quot;#1f4037&quot;),
+                        branding_include = TRUE,
+                        title = i_(&quot;title&quot;, lang()),
+                        subtitle = i_(&quot;subtitle&quot;, lang())
+                        )
+    })
+
+  output$datestamp &lt;- renderUI({
+    h6(paste0(i_(&quot;status&quot;,lang()), &quot;: &quot;, max_date))
+    })
+
+}
+
+
+options = list(height = 500)
+)
+</code></pre><p>Hopefully we’ve convinced you that you should start using <code>shi18ny</code> to internationalize your Shiny data visualization apps.</p>
+<p>If so, head over to the <a href="https://shi18ny.datasketch.dev/">package documentation</a> to find out even more about the package (or if you would like to contribute), or watch our <a href="https://user2020.r-project.org/program/posters/">UseR2020 talk</a> on youtube: <a href="https://www.youtube.com/watch?v=IVSCQHcTFLQ">shi18ny: Internationalization for Shiny Apps</a>.</p>
+
+  </div>
+
+		</main>
+		
+<footer
+  style="background-color: #222526; color: #ffffff;"
+  class='bg-gray-900 text-white'
+>
+  <div class="flex flex-wrap items-center px-16 py-12">
+    <div class="w-full md:w-1/3 flex flex-col items-center">
+      <img class="sm:w-1/2" src='/images/datasketch_v.svg' alt="">
+    </div>
+    <div class="w-full md:w-1/3 flex flex-col items-center  mt-10 md:mt-0">
+      <p class="uppercase text-xl font-bold">Share</p>
+      <div class="flex items-center mt-4">
+        
+          <a class="mr-4" href="https://twitter.com/datasketch" target="_blank" rel="noopener noreferrer">
+            <img src='/images/tw.svg' alt="">
+          </a>
+        
+        
+          <a class="mr-4" href="mailto:info@datasketch.co">
+            <img src='/images/mail.svg' alt="">
+          </a>
+        
+        
+          <a class="mr-0" href="https://facebook.com/datasketch/" target="_blank" rel="noopener noreferrer">
+            <img src='/images/fb.svg' alt="">
+          </a>
+        
+      </div>
+    </div>
+    <div class="w-full md:w-1/3 flex flex-col items-center mt-10 md:mt-0">
+      <div class="flex items-center">
+        <img class="mr-4" src='/images/cc.svg'>
+        <img class="mr-4" src='/images/by.svg'>
+        <img class="mr-0" src='/images/sa.svg'>
+      </div>
+      <p class="mt-4 w-64 text-sm">If you use or adapt the contents of this site please include a reference. All contents, unless otherwise stated is licenced with <a href="https://creativecommons.org/licenses/by-sa/4.0/">CC-BY-SA </a></p>
+    </div>
+  </div>
+</footer>
+
+		<script src='/js/header.js'></script>
+	</body>
+
+</html>
