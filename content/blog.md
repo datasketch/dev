@@ -13,11 +13,12 @@ menu:
 ### How to make spirals with R and make indigenous communities count
 
 
-![](/post/2020-07-08-introducing-shi18ny-shiny-internationalization/1-poblacion.gif)
+![](//post/2020-08-09-how-to-make-spirals-with-r/1-poblacion.gif)
 
 [See more](/post/2020-08-09-how-to-make-spirals-with-r/)
 
-Español: [Cómo hacer espirales con R para resaltar patrones indígenas](/post/2020-08-09-como-hacer-espirales-con-r-patrones-indigenas)
+Español 
+[Cómo hacer espirales con R para resaltar patrones indígenas](/post/2020-08-09-como-hacer-espirales-con-r-patrones-indigenas)
 
 
 
