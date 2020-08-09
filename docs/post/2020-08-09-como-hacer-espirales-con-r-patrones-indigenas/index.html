@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html>
+	<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href='/css/tailwind-1.3.5.min.css'>
+<link rel="stylesheet" href='/css/titi.css'>
+<link rel="stylesheet" href='/css/extend.css'>
+<link rel="stylesheet" href='/css/custom.css'>
+
+
+
+  
+<script type="application/javascript">
+var doNotTrack = false;
+if (!doNotTrack) {
+	window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+	ga('create', 'UA-164320300-2', 'auto');
+	
+	ga('send', 'pageview');
+}
+</script>
+<script async src='https://www.google-analytics.com/analytics.js'></script>
+
+
+
+
+
+
+
+  
+    
+    
+      
+    
+    
+  
+  
+  
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=IBM&#43;Plex&#43;Sans:400,500">
+
+
+
+  <title>Cómo hacer espirales con R para resaltar patrones indígenas - Datasketch Dev</title>
+
+
+
+	<body class="min-h-screen flex flex-col">
+		
+
+
+
+
+<header id="main-header" data-config="{&#34;behavior&#34;:&#34;sticky&#34;,&#34;bg_color&#34;:&#34;#fcfcfc&#34;,&#34;bg_color_class&#34;:&#34;bg-gray-800&#34;,&#34;logo&#34;:&#34;images/datasketch.svg&#34;,&#34;text_color&#34;:&#34;#222526&#34;,&#34;text_color_class&#34;:&#34;&#34;}" class="w-full h-16 px-4 z-10">
+  <nav class="h-full flex flex-col items-center md:justify-between md:flex-row">
+    
+    <div class="w-full h-full flex justify-between items-center md:w-auto">
+      <a href="/">
+        <img class="max-w-xs" src="/images/datasketch.svg" alt="">
+      </a>
+      <div class="flex items-center space-x-4 md:hidden">
+        
+          <button id="sidebar-toggle" style="color: #222526;" class="">
+            <svg class="fill-current" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24"><path d="M4 5h16a1 1 0 0 1 0 2H4a1 1 0 1 1 0-2zm0 6h16a1 1 0 0 1 0 2H4a1 1 0 0 1 0-2zm0 6h16a1 1 0 0 1 0 2H4a1 1 0 0 1 0-2z"/></svg>
+          </button>
+        
+        
+            
+  <a href="https://twitter.com/datasketch" target="_blank" rel="noopener noreferrer">
+    <img src='/images/tw.svg' alt="">
+  </a>
+
+
+  <a href="mailto:info@datasketch.co">
+    <img src='/images/mail.svg' alt="">
+  </a>
+
+
+  <a href="https://facebook.com/datasketch/" target="_blank" rel="noopener noreferrer">
+    <img src='/images/fb.svg' alt="">
+  </a>
+
+        
+      </div>
+    </div>
+    
+    <div class="nav-links">
+      
+        
+        
+          <a href="/blog/" class='' title="Blog">Blog</a>
+        
+          <a href="/apps/" class='' title="Datasketch Apps">Datasketch Apps</a>
+        
+          <a href="/packages-and-libraries/" class='' title="Packages and libraries">Packages and libraries</a>
+        
+          <a href="/post/2020-07-07-what-are-we-doing/" class='' title="What are we doing">What are we doing</a>
+        
+      
+      <div
+        class="hidden items-center space-x-4 md:flex">
+        
+  <a href="https://twitter.com/datasketch" target="_blank" rel="noopener noreferrer">
+    <img src='/images/tw.svg' alt="">
+  </a>
+
+
+  <a href="mailto:info@datasketch.co">
+    <img src='/images/mail.svg' alt="">
+  </a>
+
+
+  <a href="https://facebook.com/datasketch/" target="_blank" rel="noopener noreferrer">
+    <img src='/images/fb.svg' alt="">
+  </a>
+
+      </div>
+    </div>
+  </nav>
+</header>
+
+		<main id="main-content" class="flex-grow">
+			
+  <div class="overflow-x-hidden">
+    
+      <div class="w-full text-center mx-auto py-16 px-4 sm:w-5/6 md:w-3/4 lg:w-7/12 xl:w-2/5">
+        <h1 class="text-5xl">Cómo hacer espirales con R para resaltar patrones indígenas</h1>
+        
+      </div>
+    
+    
+  </div>
+  <div class="page-post-content px-4 w-full mx-auto leading-loose sm:w-5/6 md:w-3/4 md:text-lg lg:w-7/12 xl:w-1/2">
+    <p>Todo empezó hace unos meses. Empezamos a colaborar con <a href="http://angedapropia.co">Agenda Propia</a> organización que hace periodismo indígena en Colombia en una investigación en la cual queríamos encontrar un equilibrio entre los números y la identidad de las diferentes comunidades indígenas con las que estábamos trabajando.</p>
+<p><img src="1-poblacion.gif" alt=""></p>
+<p><em>De mil colombianos 44 pertenecen a una comunidad indígena</em></p>
+<p>En esta artículo les cómo llegamos a estas visualizations a partir de hojas de cálculo del censo indígena para mostrar cifras que representaran bien a las comunidades.</p>
+<p><a href="https://www.agendapropia.co/mujer-palabra-resistencia/">Lee la investigación completa aquí</a> con las visualizations, fotografías y traducciones a los idiomas de las comunidades: Wayuu, Gunadule, and Tikuna.</p>
+<p>Creemos que es muy importante como equipo de datos apoyar a las organizaciones sociales y periodistas para mostrar las realidades de grupos vulnerables. Suele ocurrir que estos grupos ocupan los titulares en raras ocasiones cuando suceden eventos muy poco probables como estos artículos <a href="https://www.economist.com/obituary/2020/05/28/antonio-bolivar-died-on-april-30th">The Economist</a> o el de <a href="https://www.newyorker.com/news/daily-comment/the-death-of-antonio-bolivar-an-indigenous-elder-in-the-amazon-rainforest">New Yorker</a> sobre la muerta de Antonio Bolívar, último miembro de una comunidad del Amazonas famoso por su aparición en la película nominada a los premios Óscar: El abrazo de la serpiente.</p>
+<!-- raw HTML omitted -->
+<p>En un esfuerzo por poner un rostro humano a las historias de mujeres indígenas en Colombia que viven en la frontera con países como Venezuela, Brasil, Perú y Panamá. Nos embarcamos con el equipo de <a href="http://agendapropia.co">Agenda Propia</a> en un camino para conectar números y datos enterrados en el censo del país con los rostros, fotografías, historias narrativas y elementos visuales de comunidades de la Amazonía, el desierto de la Guajira y la región del Darién.</p>
+<blockquote>
+<p>Los elementos visuales que decidimos utilizar fueron los que emergen de sus tejidos y patrones ancestrales.</p>
+</blockquote>
+<p><img src="4-wayuu.gif" alt="4-wayuu.gif"></p>
+<p><em>380.460 son Wayuu en el lado colombiano de ellos 197.140 son mujeres, su idioma: Wayuunaiki. Hay 542.043 Wayuus a ambos lados de la frontera colombo-venezolana</em></p>
+<p>Decidimos hacer una visualización de datos que mostrara patrones indígenas y sus diferentes proporciones a partir de los números de censo con el fin de acompañar las historias. Comenzamos a buscar formas de organizar los números en puntos con los patrones indígenas y círculos, con la idea de que los puntos formaran crículos en una disposición que pareciera más organica.</p>
+<p>Pensamos en organizar los puntos en espiral, aquí empieza el código. No sabíamos que había <a href="https://en.wikipedia.org/wiki/List_of_spirals">tantas posibilidades para crear espirales</a>. Aquí algunas:</p>
+<ul>
+<li>Espiral de Arquímedes</li>
+<li>Círculo evolvente</li>
+<li>Espiral de Atzema</li>
+<li>Espiral logarítmica</li>
+<li>Espiral de Vogel</li>
+</ul>
+<p>La espiral logarítmica estaba fuera de discusión, ya que queríamos una espiral que pareciera densa y con que mostrara una densidad de puntos uniforme en un círculo. La espiral de Vogel no es del todo una espiral, pero hablaremos de eso más adelante. La espiral de Atzema para <code>n</code> grande se aproxima a la espiral de Arquímedes y comienza con una asíntota que se puede suprimir.</p>
+<pre><code>archimedean_spiral &lt;- function(n, a = 0, b = 1, turns = 3){
+  # b separation of turns
+  t &lt;- seq(0, turns  * 2 *pi, length.out=n)
+  x &lt;- (a + b*t) * cos(t)
+  y &lt;- (a + b*t) * sin(t)
+  d &lt;- tibble::tibble(x, y)
+  d$n &lt;- 1:n
+  d
+}
+
+circle_involute &lt;- function(n, a = 2){
+  # https://mathworld.wolfram.com/CircleInvolute.html
+  t &lt;- seq(0,5*pi, length.out=n)
+  x &lt;- a * (cos(t) + t * sin(t))
+  y &lt;- a * (sin(t) - t * cos(t))
+  d &lt;- tibble::tibble(x, y)
+  d$n &lt;- 1:n
+  d
+}
+
+atzema_spiral &lt;- function(n, turns = 3){
+  t &lt;- seq(0, turns * 2 *pi, length.out=n)
+  x &lt;- sin(t)/t - 2 * cos(t) - t * sin(t)
+  y &lt;- cos(t)/t - 2 * sin(t) + t * cos(t)
+  d &lt;- tibble::tibble(x, y)
+  d$n &lt;- 1:n
+  d
+}
+
+vogel_spiral &lt;- function(n){
+  t &lt;- 1:n
+  r &lt;- sqrt(t)
+  golden_angle &lt;- pi * (3 - sqrt(5))
+  theta &lt;- t * golden_angle
+  x &lt;- r * cos(theta)
+  y &lt;- r * sin(theta)
+  d &lt;- tibble::tibble(x, y)
+  d$n &lt;- 1:n
+  d
+}
+
+</code></pre><p>Aquí las espirales generadas con el código de arriba.</p>
+<p>! <a href="spirals.png"></a></p>
+<p>Necesitamos espirales que funcionen bien con diferentes números de puntos en el orden de decenas o incluso en miles. Intentamos usar el círculo evolvente, pero con la espiral de Arquímedes, uno puede tener un poco más de control sobre el número de vueltas y su separación.</p>
+<p>Veamos cómo la espiral de Arquímedes funciona con diferentes números de puntos. Cuando vemos las espirales no como <em>paths</em> sino como puntos, obtenemos una imagen diferente. Para nuestro caso de uso específico, necesitábamos puntos que llenaran un círculo de manera uniforme, independientemente de la cantidad de puntos que usemos, para esto seguimos adelante e hicimos más ajustes a nuestra función de modo que pudiéramos aproximar el arco en la espiral de Arquímedes y así mantenerlos arcos constantes.</p>
+<p><img src="archimedean-points.png" alt=""></p>
+<p>No estábamos contentos con la distribución de puntos para diferentes &ldquo;n&rdquo;. Al final de la espiral siempre se ve cortada y no da la impresión de que los puntos llenen un círculo de forma uniforme.</p>
+<p>Fue entonces cuando probamos la <a href="https://www.codeproject.com/Articles/1221341/The-Vogel-Spiral-Phenomenon">espiral de Vogel</a>. La cual toma en cuenta el <a href="https://en.wikipedia.org/wiki/Golden_angle">Ángulo Divino</a> que es igual a la Divina Proporción solo que a lo largo de dos arcos en un círculo. Se agrega cada puntorotando <code>137.5077...</code> grados o <code>pi ( 3 - sqrt(5))</code> radianes y con un radio proporcional a <code>sqrt(n)</code>.</p>
+<p><img src="Golden_Angle.png" alt=""></p>
+<p>El patron generado con esta espiral luce muy orgánico y funciona muy bien para múltiples valores de <code>n</code> puntos, basta con asegurarse que el tamaño de los puntos se ajusta en la medida en que se usan diferentes valores de <code>n</code>.</p>
+<p><img src="vogel.png" alt=""></p>
+<p>Disfruta algunos patrones de diferentes comunidades indígenas de Colombia.</p>
+<p><img src="6-gunadule.gif" alt=""></p>
+<p><em>Este es el patrón Gunadule, una comunidad indígena en la frontera de Panamá y Colombia, hay 2610 miembros de esta comunidad</em></p>
+<p>! <a href="8-tikuna.gif"></a></p>
+<p><em>Hay 13.842 Tikunas en Colombia, viven en la Amazonía</em></p>
+<p>Si tiene curiosidad acerca de las animaciones, simplemente configuramos los patrones como polígonos y usamos [{transformr}] (<a href="https://github.com/thomasp85/transformr">https://github.com/thomasp85/transformr</a>)</p>
+
+  </div>
+
+		</main>
+		
+<footer
+  style="background-color: #222526; color: #ffffff;"
+  class='bg-gray-900 text-white'
+>
+  <div class="flex flex-wrap items-center px-16 py-12">
+    <div class="w-full md:w-1/3 flex flex-col items-center">
+      <img class="sm:w-1/2" src='/images/datasketch_v.svg' alt="">
+    </div>
+    <div class="w-full md:w-1/3 flex flex-col items-center  mt-10 md:mt-0">
+      <p class="uppercase text-xl font-bold">Share</p>
+      <div class="flex items-center mt-4">
+        
+          <a class="mr-4" href="https://twitter.com/datasketch" target="_blank" rel="noopener noreferrer">
+            <img src='/images/tw.svg' alt="">
+          </a>
+        
+        
+          <a class="mr-4" href="mailto:info@datasketch.co">
+            <img src='/images/mail.svg' alt="">
+          </a>
+        
+        
+          <a class="mr-0" href="https://facebook.com/datasketch/" target="_blank" rel="noopener noreferrer">
+            <img src='/images/fb.svg' alt="">
+          </a>
+        
+      </div>
+    </div>
+    <div class="w-full md:w-1/3 flex flex-col items-center mt-10 md:mt-0">
+      <div class="flex items-center">
+        <img class="mr-4" src='/images/cc.svg'>
+        <img class="mr-4" src='/images/by.svg'>
+        <img class="mr-0" src='/images/sa.svg'>
+      </div>
+      <p class="mt-4 w-64 text-sm">If you use or adapt the contents of this site please include a reference. All contents, unless otherwise stated is licenced with <a href="https://creativecommons.org/licenses/by-sa/4.0/">CC-BY-SA </a></p>
+    </div>
+  </div>
+</footer>
+
+		<script src='/js/header.js'></script>
+	</body>
+
+</html>
