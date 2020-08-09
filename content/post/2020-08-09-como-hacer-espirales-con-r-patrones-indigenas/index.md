@@ -91,7 +91,7 @@ vogel_spiral <- function(n){
 
 Aquí las espirales generadas con el código de arriba.
 
-! [](spirals.png)
+![](spirals.png)
 
 Necesitamos espirales que funcionen bien con diferentes números de puntos en el orden de decenas o incluso en miles. Intentamos usar el círculo evolvente, pero con la espiral de Arquímedes, uno puede tener un poco más de control sobre el número de vueltas y su separación.
 
@@ -117,7 +117,7 @@ Disfruta algunos patrones de diferentes comunidades indígenas de Colombia.
 _Este es el patrón Gunadule, una comunidad indígena en la frontera de Panamá y Colombia, hay 2610 miembros de esta comunidad_
 
 
-! [](8-tikuna.gif)
+![](8-tikuna.gif)
 
 _Hay 13.842 Tikunas en Colombia, viven en la Amazonía_
 
